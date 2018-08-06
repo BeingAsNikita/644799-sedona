@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Кухарь](https://up.htmlacademy.ru/htmlcss/22/user/644799).
-* Наставник: `Неизвестно`.
+* Наставник: `Наталья Майстренко`. https://htmlacademy.ru/profile/natalie
 
 ---
 
