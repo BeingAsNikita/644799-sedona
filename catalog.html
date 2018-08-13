@@ -9,14 +9,14 @@
 
 		
 			<nav class="main-navigation">
-				<a href="#" class="main-header-logo">
+				<a href="index.html" class="main-header-logo">
 					<img src="#" width="" height="" alt="Логотип Седона">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
+					<li><a>Гостиницы</a></li>
 				</ul>
 			</nav>
 	</header>
@@ -25,25 +25,28 @@
 
 		<section class="hotel-filter">
 			<form>
-				<p>Инфраструктура:</p>
-			<ul>
-				<li><label for="pool">Бассейн</label></li>
+				<fieldset>
+				<legend>Инфраструктура:</legend>
+			
+					<label for="pool">Бассейн</label></li>
 					<input type="checkbox"  id="pool">
-				<li><label for="parking">Парковка</label></li>
+					<label for="parking">Парковка</label></li>
 					<input type="checkbox"  id="parking">
-				<li><label for="Wi-Fi">Wi-Fi</label></li>
+					<label for="Wi-Fi">Wi-Fi</label></li>
 					<input type="checkbox" id="Wi-Fi">	
-			</ul>
-				<p>Тип жилья:</p>
-			<ul>
+				</fieldset>
+				
+			<fieldset>
+				<legend>Тип жилья:</legend>
 
-				<li><label for="pool">Бассейн</label></li>
-					<input type="checkbox"  id="pool">
-				<li><label for="parking">Парковка</label></li>
-					<input type="checkbox"  id="parking">
-				<li><label for="Wi-Fi">Wi-Fi</label></li>
-					<input type="checkbox" id="Wi-Fi">	
-			</ul>
+					<label for="pool">Гостиница</label></li>
+					<input type="checkbox"  id="hotel">
+					<label for="parking">Мотель</label></li>
+					<input type="checkbox"  id="motel">
+					<label for="Wi-Fi">Апартаменты</label></li>
+					<input type="checkbox" id="apartments">	
+			</fieldset>
+			<div class="price">
 				<p>Стоимость в сутки (Р):</p>
 				<div class="container">
    					<input type="text" id="minCost" value="0">
@@ -52,6 +55,7 @@
 				</div>
 
 				<input type="range" min="0" max="20000" step="1000">
+			</div>
 			</form>
 		</section>
 
@@ -61,49 +65,50 @@
 					<h2>НАЙДЕНО:3</h2>
 					<p>Сортировка</p>
 					<ul>
-						<li>По цене</li>
-						<li>По типу</li>
-						<li>По рейтингу</li>
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По рейтингу</a></li>
 					</ul>
 					<div class="">
-						
+						<a href="#" class="increase">&#9650</a>
+						<a href="#" class="decrease">&#9660</a>
 					</div>
 				</header>
-			<ul>
-				<li>
+			<div>
+				<article>
 					<img src="http://placehold.it/150x100">
 					<h3>AMARA RESORT & SPA</h3>
-					<p>Гостиница от 4000 р.</p>
+					<p><span>Гостиница</span> <span>от 4000 р.</span></p>
 					<a href="#" class="botton-info">Подробнее</a>
 					<a href="#" class="botton-booking">Забронировать</a>
 					<div class="rating">
 						
 					</div>
 					<span>РЕЙТИНГ: 8,5</span>
-				</li>
-				<li>
+				</article>
+				<article>
 					<img src="http://placehold.it/150x100">
 					<h3>DESERT QUAIL INN</h3>
-					<p>Мотель от 3000 р.</p>
+					<p><span>Мотель</span> <span>от 3000 р.</span></p>
 					<a href="#" class="botton-info">Подробнее</a>
 					<a href="#" class="botton-booking">Забронировать</a>
 					<div class="rating">
 						
 					</div>
 					<span>РЕЙТИНГ: 8,9</span>
-				</li>
-				<li>
+				</article>
+				<article>
 					<img src="http://placehold.it/150x100">
 					<h3>VILLAS AT POCO DIABLO</h3>
-					<p>Апартаменты от 2000 р.</p>
+					<p><span>Апартаменты</span> <span>от 2000 р.</span></p>
 					<a href="#" class="botton-info">Подробнее</a>
 					<a href="#" class="botton-booking">Забронировать</a>
 					<div class="rating">
 						
 					</div>
 					<span>РЕЙТИНГ: 9,2</span>
-				</li>
-			</ul>
+				</article>
+			</div>
 			
 		</section>
 
@@ -111,7 +116,7 @@
 
 	<footer class="main-footer">
 		<p>
-			<b>#VISITSEDONA</b>
+			#VISITSEDONA
 		</p>
 
 		<div class="social">
