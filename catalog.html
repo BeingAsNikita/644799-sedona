@@ -24,7 +24,7 @@
 	<main class="container">
 
 		<section class="hotel-filter">
-			<form>
+			<form oninput="costOutput.value=cost_hotel.value">
 				<fieldset>
 				<legend>Инфраструктура:</legend>
 			
@@ -48,13 +48,13 @@
 			</fieldset>
 			<div class="price">
 				<p>Стоимость в сутки (Р):</p>
-				<div class="container">
-   					<input type="text" id="minCost" value="0">
-  					<input type="text" id="maxCost" value="3000">
+				<div class="output-area">
+   					
+  					<output name="costOutput"></output>
    				
 				</div>
-
-				<input type="range" min="0" max="20000" step="1000">
+			
+				<input type="range" name="cost_hotel" min="0" max="20000" step="1000">
 			</div>
 			</form>
 		</section>
