@@ -10,7 +10,7 @@
 		
 			<nav class="main-navigation">
 				<a href="index.html" class="main-header-logo">
-					<img src="#" width="" height="" alt="Логотип Седона">
+					<img src="img/logo.png" width="" height="" alt="Логотип Седона">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="#">Информация</a></li>
@@ -29,28 +29,28 @@
 				<legend>Инфраструктура:</legend>
 			
 					<label for="pool">Бассейн</label></li>
-					<input type="checkbox"  id="pool">
+					<input type="checkbox"  id="pool" name="pool">
 					<label for="parking">Парковка</label></li>
-					<input type="checkbox"  id="parking">
+					<input type="checkbox"  id="parking" name="parking">
 					<label for="Wi-Fi">Wi-Fi</label></li>
-					<input type="checkbox" id="Wi-Fi">	
+					<input type="checkbox" id="Wi-Fi" name="Wi-Fi">	
 				</fieldset>
 				
 			<fieldset>
 				<legend>Тип жилья:</legend>
 
-					<label for="pool">Гостиница</label></li>
-					<input type="checkbox"  id="hotel">
-					<label for="parking">Мотель</label></li>
-					<input type="checkbox"  id="motel">
-					<label for="Wi-Fi">Апартаменты</label></li>
-					<input type="checkbox" id="apartments">	
+					<label for="hotels">Гостиница</label></li>
+					<input type="checkbox"  id="hotels" name="hotels">
+					<label for="motels">Мотель</label></li>
+					<input type="checkbox"  id="motel" name="motels">
+					<label for="apartments">Апартаменты</label></li>
+					<input type="checkbox" id="apartments" name="apartments">	
 			</fieldset>
 			<div class="price">
-				<p>Стоимость в сутки (Р):</p>
+				<label for="costOutput">Стоимость в сутки (Р):</label>
 				<div class="output-area">
    					
-  					<output name="costOutput"></output>
+  					<output name="costOutput" id="costOutput" value="0"></output>
    				
 				</div>
 			
