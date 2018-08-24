@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -16,7 +19,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a>Гостиницы</a></li>
+					<li ><a class="active">Гостиницы</a></li>
 				</ul>
 			</nav>
 	</header>
@@ -57,7 +60,7 @@
 			
 				<input type="range" name="cost_hotel" min="0" max="20000" step="1000">
 			</div>
-			<button type="submit">Показать</button>
+			<button type="submit" class="button-show">Показать</button>
 			</fieldset>
 			</form>
 		</section>
@@ -66,7 +69,7 @@
 			
 				<header class="sort-result">
 					<h2>НАЙДЕНО:3</h2>
-					<p>Сортировка</p>
+					<p>Сортировка:</p>
 					<ul>
 						<li><a href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
@@ -81,7 +84,7 @@
 			<div>
 				<article>
 					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa" />
-					<h3>AMARA RESORT & SPA</h3>
+					<h3><a href="#"> AMARA RESORT & SPA</a></h3>
 					<p><span>Гостиница</span> <span>от 4000 р.</span></p>
 					<a href="#" class="button-info">Подробнее</a>
 					<a href="#" class="button-booking">Забронировать</a>
@@ -92,7 +95,7 @@
 				</article>
 				<article>
 					<img src="img/desert-quail.jpg"  width="135" height="90" alt="Desert quail inn" />
-					<h3>DESERT QUAIL INN</h3>
+					<h3><a href="#"> DESERT QUAIL INN</a></h3>
 					<p><span>Мотель</span> <span>от 3000 р.</span></p>
 					<a href="#" class="button-info">Подробнее</a>
 					<a href="#" class="button-booking">Забронировать</a>
@@ -103,7 +106,7 @@
 				</article>
 				<article>
 					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo" />
-					<h3>VILLAS AT POCO DIABLO</h3>
+					<h3><a href="#"> VILLAS AT POCO DIABLO</a></h3>
 					<p><span>Апартаменты</span> <span>от 2000 р.</span></p>
 					<a href="#" class="button-info">Подробнее</a>
 					<a href="#" class="button-booking">Забронировать</a>
@@ -119,7 +122,7 @@
 	</main>
 
 	<footer class="main-footer">
-		<p>
+		<p class="tag">
 			#VISITSEDONA
 		</p>
 

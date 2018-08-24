@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-position: top center;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-header img {
+	margin-top: 76px;
+
+}
+.main-navigation{
+	background: #ffffff;
+}
+.site-navigation {
+	list-style: none;
+}
+
+
+
+.site-navigation a {
+	color:#000000;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #ffffff;
+  color:#81b3d2;
+}
+
+
+
+
+.intro-text p:first-child {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	width: 636px;
+	text-align: center;
+
+}
+.intro-text p:last-child {
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+
+.reasons-list {
+	list-style: none;
+}
+.reasons-text h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+.text-gray {
+	background-color: #eeeeee;
+}
+.text-blue {
+	background-color: #81b3d2;
+	color:#ffffff;
+}
+.hotel-booking h3 {
+	font-size: 30px;
+}
+.hotel-booking p {
+	line-height: 24px;
+}
+.hotel-booking a {
+	font-size: 21px;
+	line-height: 26px;
+}
+.search-form {
+	line-height: 26px;
+	font-weight: bold;
+}
+.search-form button  {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+
+.tag {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+/*Catalog*/
+
+.hotel-filter {
+	background: #5b4d4a;
+	color: #ffffff;
+}
+
+.hotel-filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
+.price label {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
+.button-show {
+	line-height: 21px;
+	color: #ffffff;
+	background: rgba(91, 77, 74, 0.7);
+}
+.button-show:hover,
+.button-show:focus {
+	background:#ffffff;
+	color: #000000;
+}
+
+.sort-result h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.sort-result p {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.filter-meanings li {
+	font-size: 133px;
+	line-height: 18px;
+}

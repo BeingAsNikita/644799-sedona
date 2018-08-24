@@ -2,7 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+
   </head>
   <body>
 	<header class="main-header">
@@ -19,10 +23,10 @@
 					<li><a href="catalog.html">Гостиницы</a></li>
 				</ul>
 			</nav>
-	</header>
 
-	<main class="container">
-		<img src="img/intro-welcome.svg" alt="Добро пожаловать в седону!">
+			
+			<img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в седону!">
+			
 
 		<section class="intro">
 			<div class="intro-text">
@@ -30,11 +34,18 @@
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
 		</section>
+	</header>
+
+	<main class="container">
+		
+
+		
 
 		<section class="reasons">
+			<h2 class="visually-hidden">Причины посетить седону</h2>
 			<ul class="reasons-list">
 				<li class="reasons-item">
-					<div class="reasons-text">
+					<div class="reasons-text text-blue">
 						<h3>Настоящий городок</h3>
 						<p> - №1 -</p>
 						<p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
@@ -64,7 +75,7 @@
 				</li>
 
 				<li class="reasons-item">
-					<div class="reasons-text">
+					<div class="reasons-text text-blue">
 						<img src="img/reason-img-two.jpg" width="800" height="401" alt="Седона">
 						<h3>Там есть мост дьявола</h3>
 						<p>-№2-</p>
@@ -73,21 +84,21 @@
 				</li>
 		
 				<li class="reason-item">
-					<div class="reasons-text">
+					<div class="reasons-text text-gray">
 						<h3>Небольшая площадь</h3>
 						<p> - №3 - </p>
 						<p>Все достопримечательности находятся очень близко</p>
 					</div>
 				</li>
 				<li class="reason-item">
-					<div class="reasons-text">
+					<div class="reasons-text text-gray">
 						<h3>Красивая дорога</h3>
 						<p> - №4 - </p>
 						<p>Ехать в Седону из Лас-Веаса совсем не скучно!</p>
 					</div>
 				</li>
 				<li class="reason-item">
-					<div class="reasons-text">
+					<div class="reasons-text text-gray">
 						<h3>Мало туристов</h3>
 						<p> - №5 - </p>
 						<p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -104,7 +115,7 @@
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<a href="#">Поиск гостиницы в Седоне</a>
-				<form class="" method="post" action="https://echo.htmlacademy.ru" target="_blank" >
+				<form class="search-form" method="post" action="https://echo.htmlacademy.ru" target="_blank" >
 					<fieldset>
 						<label for="start">Дата заезда:</label>
 							<input type="text" id="start" name="start" 
@@ -122,7 +133,7 @@
 						<label>Дети:</label>
 							<input type="number" min="0" max="10" name="children">
 					</fieldset>
-					<button type="submit">Найти</button>
+					<button type="submit" class="button-blue">Найти</button>
 				</form>
 		</section>
 
@@ -132,7 +143,7 @@
 	</main>
 
 	<footer class="main-footer">
-		<p>
+		<p class="tag">
 			#VISITSEDONA
 		</p>
 
