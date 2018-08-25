@@ -113,6 +113,9 @@ a {
 
 .hotel-filter {
 	background: #5b4d4a;
+	background-image: url("../img/filter-bg.png");
+	background-size:  1200px 800px;
+	background-repeat: no-repeat;
 	color: #ffffff;
 }
 
