@@ -19,8 +19,11 @@ a {
 }
 
 
-.main-header img {
-	margin-top: 76px;
+.main-header {
+	background-image: url("../img/background-photo.jpg");
+	background-size:  1200px 800px;
+	background-repeat: no-repeat;
+
 
 }
 .main-navigation{
@@ -49,6 +52,9 @@ a {
 	color:#766357;
 }
 
+.intro-text {
+	color: #000000;
+}
 
 .intro-text p:first-child {
 	font-size: 21px;
@@ -146,6 +152,7 @@ a {
 .filter-meanings a:focus {
   background-color: #ffffff;
   color:#81b3d2;
+  opacity: 1;
   }
 
 .filter-meanings li a {
@@ -163,12 +170,44 @@ a {
 .hotel-card h3 a {
 	font-size: 21px;
 	line-height: 26px;
+	color: #000000;
+}
+.hotel-card h3 a:hover {
+	color:#81b3d2; 
+}
+.hotel-card h3 a:active {
+	color: rgba(0, 0, 0, 0.3)
 }
 .button-blue {
 	background:#81b3d2;
 	color:#ffffff; 
 }
+.button-blue:hover {
+	background: #669ec0;
+}
+.button-blue:active {
+	background:#5496bd;
+	color: rgba(255, 255, 255, 0.3)
+	
+}
 .button-brown {
 	color: #ffffff;
 	background: #766357;
+}
+.button-brown:hover {
+	background: #604e43;
+}
+.button-brown:active {
+	background:#503e33;
+	color: rgba(255, 255, 255, 0.3)
+}
+.field,
+.field:hover {
+	background: #f2f2f2;
+}
+.field:focus {
+	background: #ffffff;
+}
+.footer-copyright a:hover {
+	color: #81b3d2;
 }
