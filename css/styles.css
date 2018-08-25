@@ -40,14 +40,14 @@ a {
 
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:focus {
   background-color: #ffffff;
   color:#81b3d2;
 }
 
-
+.site-navigation a.active {
+	color:#766357;
+}
 
 
 .intro-text p:first-child {
@@ -142,7 +142,33 @@ a {
 	font-weight: bold;
 }
 
-.filter-meanings li {
-	font-size: 133px;
+.filter-meanings a:hover,
+.filter-meanings a:focus {
+  background-color: #ffffff;
+  color:#81b3d2;
+  }
+
+.filter-meanings li a {
+	color: #000000;
+	font-size: 12px;
 	line-height: 18px;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #81b3d2 ;
+	opacity: 0.3;
+}
+
+.filter-meanings li a:active {
+	color: #000000;
+}
+.hotel-card h3 a {
+	font-size: 21px;
+	line-height: 26px;
+}
+.button-blue {
+	background:#81b3d2;
+	color:#ffffff; 
+}
+.button-brown {
+	color: #ffffff;
+	background: #766357;
 }
