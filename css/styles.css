@@ -202,14 +202,15 @@ a {
 .filter-results {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 }
 .filter-results header {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	width: 1200px;
+	
+	
+	width: 1056px;
 	height: 86px;
 
 }
@@ -248,6 +249,7 @@ a {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+
 }
 .filter-meanings a:hover,
 .filter-meanings a:focus {
@@ -269,10 +271,22 @@ a {
 .filter-meanings li a:active {
 	color: #000000;
 }
+.cards-container {
+	width: 1056px;
+
+}
 .hotel-card h3 a {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+
+}
+article.hotel-card {
+	border-top: 1px #e5e5e5 solid;
+	
+}
+article.hotel-card:last-child {
+	border-bottom: 1px #e5e5e5 solid;
 }
 .hotel-card h3 a:hover {
 	color:#81b3d2; 
