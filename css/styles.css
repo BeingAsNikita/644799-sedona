@@ -18,27 +18,57 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
 
 .main-header {
 	background-image: url("../img/background-photo.jpg");
 	background-size:  1200px 800px;
 	background-repeat: no-repeat;
+	margin-top:0;
+	text-align: center;
 
+
+}
+.bg-img {
+	margin-top: 61px;
+}
+.logo {
+	position: absolute;
 
 }
 .main-navigation{
 	background: #ffffff;
+
 }
 .site-navigation {
+	margin:0;
 	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
 }
+.site-navigation li {
+	display: flex;
+	flex-direction: row;
+	width:239px;
+	height: 56px;
+	margin: 0;
+	align-items: center;
 
+}
 
 
 .site-navigation a {
 	color:#000000;
 	font-weight: bold;
 	line-height: 26px;
+	margin: 0 auto;
+
 }
 
 
@@ -52,8 +82,16 @@ a {
 	color:#766357;
 }
 
+.intro {
+	margin-top: 61px;
+	margin-bottom: 107px;
+	text-align: center;
+
+}
 .intro-text {
 	color: #000000;
+	
+
 }
 
 .intro-text p:first-child {
@@ -66,16 +104,35 @@ a {
 }
 .intro-text p:last-child {
 	font-size: 14px;
-	margin-top: 30px;
+	margin-top: 26px;
 }
 
+.reasons {
+	text-align: center;
+}
 
 .reasons-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
 	list-style: none;
+	padding-left: 0;
+}
+.reasons-text {
+	width: 280px;
+	height: 146px;
+	padding-top: 46px;
+	padding-bottom: 64px;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-left: 0 0;
 }
 .reasons-text h3 {
 	font-size: 21px;
 	line-height: 21px;
+	
 }
 .text-gray {
 	background-color: #eeeeee;
@@ -93,22 +150,38 @@ a {
 .hotel-booking a {
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
 }
 .search-form {
+	display: flex;
+	flex-direction: column;
 	line-height: 26px;
 	font-weight: bold;
+	width: 568px;
+	height: 395px;
 }
 .search-form button  {
 	font-size: 21px;
 	line-height: 26px;
+
 }
 
+.main-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
 
 .tag {
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
+	margin-left: 132px;
 }
-
+.footer-copyright {
+	margin-right: 101px;
+}
 /*Catalog*/
 
 .hotel-filter {
@@ -210,7 +283,4 @@ a {
 }
 .field:focus {
 	background: #ffffff;
-}
-.footer-copyright a:hover {
-	color: #81b3d2;
 }
