@@ -23,6 +23,9 @@ a {
   margin: 0 auto;
   
 }
+.visually-hidden {
+	display: none;
+}
 
 .main-header {
 	background-image: url("../img/background-photo.jpg");
@@ -45,7 +48,8 @@ a {
 
 }
 .site-navigation {
-	margin:0;
+	margin:0 0;
+	padding-left: 0;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -170,7 +174,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
+	align-items: center;
 }
 
 .tag {
@@ -190,8 +194,25 @@ a {
 	background-size:  1200px 800px;
 	background-repeat: no-repeat;
 	color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	height: 217px;
 }
+.filter-results {
+	display: flex;
+	flex-direction: column;
 
+}
+.filter-results header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 1200px;
+	height: 86px;
+
+}
 .hotel-filter legend {
 	font-size: 16px;
 	line-height: 21px;
@@ -223,7 +244,11 @@ a {
 	line-height: 18px;
 	font-weight: bold;
 }
-
+.filter-meanings {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
 .filter-meanings a:hover,
 .filter-meanings a:focus {
   background-color: #ffffff;
@@ -232,6 +257,7 @@ a {
   }
 
 .filter-meanings li a {
+
 	color: #000000;
 	font-size: 12px;
 	line-height: 18px;
