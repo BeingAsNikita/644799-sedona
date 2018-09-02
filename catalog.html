@@ -8,7 +8,7 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-	<header class="inner-header">
+	<header class="inner-header container">
 
 		
 			<nav class="main-navigation">
@@ -29,7 +29,7 @@
 	<main class="container">
 
 		<section class="hotel-filter">
-			<form class="filter-form" oninput="costOutput.value=cost_hotel.value" method="post" action="https://echo.htmlacademy.ru" target="_blank">
+			<form class="filter-form" oninput="costOutput.value=cost_hotel.value" method="post" action="https://echo.htmlacademy.ru">
 				<fieldset>
 				<legend>Инфраструктура:</legend>
 			
@@ -67,7 +67,7 @@
 			</form>
 		</section>
 
-		<section class="filter-results container">
+		<section class="filter-results container-s">
 			
 				<header class="sort-result">
 					<h2>НАЙДЕНО:3</h2>
@@ -92,12 +92,19 @@
 					<p><span>Гостиница</span> <span>от 4000 р.</span></p>
 					<a href="#" class="button-info button-blue">Подробнее</a>
 					<a href="#" class="button-booking button-brown ">Забронировать</a>
-				
-					<div class="rating">
-						
-					</div>
-					<span>РЕЙТИНГ: 8,5</span>
 				</div>
+					<div class="rating">
+						<div class="star">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
+						</div>
+					<span>РЕЙТИНГ: 8,5</span>
+
+					</div>
+					
+				
 				</article>
 				<article class="hotel-card">
 					<img src="img/desert-quail.jpg"  width="135" height="90" alt="Desert quail inn" />
@@ -108,9 +115,15 @@
 					<a href="#" class="button-booking button-brown ">Забронировать</a>
 				</div>
 					<div class="rating">
-						
+						<div class="star">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
+							
+						</div>
+					<span>РЕЙТИНГ: 8,9</span>	
 					</div>
-					<span>РЕЙТИНГ: 8,9</span>
+					
 				</article>
 				<article class="hotel-card">
 					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo" />
@@ -121,9 +134,14 @@
 					<a href="#" class="button-booking button-brown ">Забронировать</a>
 				</div>
 					<div class="rating">
+						<div class="star">
+							<img src="img/star.svg">
+							<img src="img/star.svg">
 						
+						</div>
+						<span>РЕЙТИНГ: 9,2</span>
 					</div>
-					<span>РЕЙТИНГ: 9,2</span>
+					
 				</article>
 			</div>
 			
@@ -131,7 +149,7 @@
 
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer container-s">
 		<p class="tag">
 			#VISITSEDONA
 		</p>
@@ -166,7 +184,7 @@
 	</ul>
 	</div>	
 		<p class="footer-copyright">
-			<span>WEBSITE BYs</span>
+			<span>WEBSITE BY</span>
 			<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
 				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
 					<title>logo-htmlacademy-small1</title>
