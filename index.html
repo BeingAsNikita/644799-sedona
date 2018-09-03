@@ -13,7 +13,7 @@
 	<header class="main-header container">
 
 		
-			<nav class="main-navigation">
+			<nav class="main-navigation container-s">
 				<a class="main-header-logo">
 						<img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
 						</a>
@@ -31,18 +31,20 @@
 		
 			
 
+		
+	</header>
+	
+	<main class="main-index container">
 		<section class="intro">
 			<div class="intro-welcome">
 				<img src="img/intro-welcome.svg" class="bg-img" width="459" height="353" alt="Добро пожаловать в седону!">
+			</div>
 			<div class="intro-text">
 			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
+			
 		</section>
-	</header>
-	
-	<main class="main-index container">
-		
 
 		
 
@@ -141,12 +143,19 @@
 							value=""
               				placeholder="ДД месяц ГГГГ" >
               		</p>
+              		
               		<p>
 						<label for="adults">Взрослые:</label>
+						
 							<input class="field number-of-people" type="number" min="0" max="10" name="adults"  id="adults">
-					
+						
+						</div>
+						
 						<label for="children">Дети:</label>
+					
 							<input class="field number-of-people" type="number" min="0" max="10" name="children" id="children">
+							
+						</div>
 					</p>
 					<button type="submit" class="button-blue find-btn">Найти</button>
 				</form>
