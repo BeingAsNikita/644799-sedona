@@ -132,32 +132,36 @@
 			<a href="#" class="button-brown search-btn">Поиск гостиницы в Седоне</a>
 				<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
 					<p>
-						<label for="start">Дата заезда:</label>
-							<input class="field date-start-end" type="text" id="start" name="start" 
+						<label for="start">
+						<span>Дата заезда:</span>
+							<input class="field date-start-end" type="text" name="start" 
 							value=""
               				placeholder="ДД месяц ГГГГ" >
+              			</label>
               		</p>
               		<p>
-						<label for="end">Дата выезда:</label>
-							<input class="field date-start-end" type="text" id="end" name="end" 
+						<label for="end">
+						<span>Дата выезда:</span>
+							<input class="field date-start-end" type="text" name="end" 
 							value=""
               				placeholder="ДД месяц ГГГГ" >
+              			</label>
               		</p>
               		
               		<p>
-						<label for="adults">Взрослые:</label>
-						
-							<input class="field number-of-people" type="number" min="0" max="10" name="adults"  id="adults">
-						
-						</div>
-						
-						<label for="children">Дети:</label>
+						<label for="adults" class="search-form_half">
+						<span>Взрослые:</span>
+							<input class="field number-of-people" type="number" min="0" max="10" name="adults">
+						</label>
 					
-							<input class="field number-of-people" type="number" min="0" max="10" name="children" id="children">
-							
-						</div>
+						
+						<label for="children" class="search-form_half">
+						<span>Дети:</span>
+							<input class="field number-of-people" type="number" min="0" max="10" name="children">
+						</label>	
+						
 					</p>
-					<button type="submit" class="button-blue find-btn">Найти</button>
+					<button type="submit" class="button-blue find-btn">НАЙТИ</button>
 				</form>
 		</section>
 
@@ -166,7 +170,7 @@
 		</section>
 	</main>
 
-	<footer class="main-footer container-s">
+	<footer class="main-footer">
 		
 		<p class="tag">
 			#VISITSEDONA
@@ -214,6 +218,21 @@
 
 	</footer>
   
+	<script type="text/javascript">
+		var link = document.querySelector(".search-btn");
+			var popup = document.querySelector(".search-form");
+		link.addEventListener("click", function(evt) {
+			evt.preventDefault ();
 
+			
+			popup.classList.toggle("search-form-show");
+			
+
+		});
+		
+
+
+		
+	</script>
   </body>
 </html>

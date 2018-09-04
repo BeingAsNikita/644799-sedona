@@ -82,17 +82,28 @@
 			</form>
 		</section>
 
-		<section class="filter-results container-s">
+		<section class="filter-results ">
 			
 				<header class="sort-result">
 					<h2>НАЙДЕНО:3</h2>
 					<p>Сортировка:</p>
-					<ul class="filter-meanings">
+				<ul class="filter-meanings">
 						<li><a href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По рейтингу</a></li>
-						<li><a href="#" class="increase">По возрастанию</a></li>
-						<li><a href="#" class="decrease">По убыванию</a></li>
+						<li>
+							<a href="#" class="increase" aria-label="По возрастанию">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 0L0 10h11z"/>
+								</svg>
+							</a>
+						</li>
+						<li><a href="#" class="decrease" aria-label="По убыванию">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 10L0 0h11"/>
+								</svg>
+							</a>
+						</li>
 					</ul>
 					
 						
@@ -104,18 +115,26 @@
 					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa" />
 				<div class="card-info">
 					<h3 ><a href="#"> AMARA RESORT & SPA</a></h3>
-					<p><span>Гостиница</span> <span>от 4000 р.</span></p>
-					<a href="#" class="button-info button-blue">Подробнее</a>
-					<a href="#" class="button-booking button-brown ">Забронировать</a>
+					<div class="info-wrap">
+						<div class="info-wrap_s">
+							<span>Гостиница</span> 
+							<a href="#" class="button-info button-blue">Подробнее</a>
+						
+						</div>
+						<div class="info-wrap_s">
+							<span>от 4000 р.</span>
+							<a href="#" class="button-booking button-brown ">Забронировать</a>
+						</div>
+					</div>
 				</div>
 					<div class="rating">
-						<div class="star">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
+						<div class="star" aria-label="four stars">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
 						</div>
-					<span>РЕЙТИНГ: 8,5</span>
+					<span aria-label="rating 8.5">РЕЙТИНГ: 8,5</span>
 
 					</div>
 					
@@ -125,18 +144,25 @@
 					<img src="img/desert-quail.jpg"  width="135" height="90" alt="Desert quail inn" />
 				<div class="card-info">
 					<h3><a href="#"> DESERT QUAIL INN</a></h3>
-					<p><span>Мотель</span> <span>от 3000 р.</span></p>
-					<a href="#" class="button-info button-blue">Подробнее</a>
-					<a href="#" class="button-booking button-brown ">Забронировать</a>
+					<div class="info-wrap">
+						<div class="info-wrap_s">
+						<span>Мотель</span>
+						<a href="#" class="button-info button-blue">Подробнее</a>
+						</div>
+						<div class="info-wrap_s">
+						 <span>от 3000 р.</span>
+						<a href="#" class="button-booking button-brown ">Забронировать</a>
+						</div>
+					</div>
 				</div>
 					<div class="rating">
-						<div class="star">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
+						<div class="star" aria-label="three stars">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
 							
 						</div>
-					<span>РЕЙТИНГ: 8,9</span>	
+					<span aria-label="rating 8.9">РЕЙТИНГ: 8,9</span>	
 					</div>
 					
 				</article>
@@ -144,17 +170,24 @@
 					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo" />
 				<div class="card-info">
 					<h3><a href="#"> VILLAS AT POCO DIABLO</a></h3>
-					<p><span>Апартаменты</span> <span>от 2000 р.</span></p>
-					<a href="#" class="button-info button-blue">Подробнее</a>
-					<a href="#" class="button-booking button-brown ">Забронировать</a>
+					<div class="info-wrap">
+						<div class="info-wrap_s">
+						<span>Апартаменты</span>
+						<a href="#" class="button-info button-blue">Подробнее</a>
+						</div>
+						<div class="info-wrap_s">
+						 <span>от 2000 р.</span>
+						<a href="#" class="button-booking button-brown ">Забронировать</a>
+						</div>
+					</div>
 				</div>
 					<div class="rating">
-						<div class="star">
-							<img src="img/star.svg">
-							<img src="img/star.svg">
+						<div class="star" aria-label="two stars">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
+							<img src="img/star.svg" width="18" height="17" alt="Rating star">
 						
 						</div>
-						<span>РЕЙТИНГ: 9,2</span>
+						<span aria-label="rating 9.2">РЕЙТИНГ: 9,2</span>
 					</div>
 					
 				</article>
@@ -164,7 +197,7 @@
 
 	</main>
 
-	<footer class="main-footer container-s">
+	<footer class="inner-footer">
 		<p class="tag">
 			#VISITSEDONA
 		</p>
