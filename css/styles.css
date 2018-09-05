@@ -294,7 +294,7 @@ ul.site-navigation {
 
 }
 .hotel-booking p {
-	line-height: 24px;
+	line-height: 26px;
 	margin-bottom: 15px;
 	
 }
@@ -521,16 +521,19 @@ ul.site-navigation {
 	padding-left: 41px;
 	cursor: pointer;
 }
-.checkbox-list-one input[type="checkbox"] + .checkbox-indicator {
+.checkbox-list-one input[type="checkbox"] + .checkbox-indicator::before {
+	content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
+  
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 
-  border: 3px solid #FFF; 
-  border-radius: 3px;
+  
 }
 .checkbox-list-two label {
 	position: relative;
@@ -538,17 +541,33 @@ ul.site-navigation {
 	padding-left: 41px;
 	cursor: pointer;
 }
-.checkbox-list-two input[type="checkbox"] + .checkbox-indicator {
+.checkbox-list-two input[type="checkbox"] + .checkbox-indicator::before {
+	content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 
-  border: 3px solid #FFF; 
-  border-radius: 3px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+ }
+.checkbox-list-one input[type="checkbox"]:checked + .checkbox-indicator::before,
+.checkbox-list-two input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+
 }
+
 .filter-form fieldset:last-child  {
 	margin-left: auto;
 	margin-right: 72px;
