@@ -288,19 +288,26 @@ ul.site-navigation {
 	text-align: center;
 	position: relative;
 }
+
 .hotel-booking h3 {
 	font-size: 30px;
 	margin-top: 0px;
 
 }
 .hotel-booking p {
+
+
 	line-height: 26px;
 	margin-bottom: 15px;
 	
 }
+p.hotel-booking-text {
+	margin-bottom: 50px;
+}
 .hotel-booking p:first-child {
 	margin-top: 55px;
 }
+
 .hotel-booking a {
 	font-size: 21px;
 	line-height: 26px;
@@ -393,6 +400,7 @@ ul.site-navigation {
 	justify-content: flex-start;
 
 }
+
 .map img {
 	width: 100%;
 	height: auto;
@@ -403,8 +411,8 @@ ul.site-navigation {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 120px;
-	padding-right: 75px;
-	padding-left: 75px;
+	padding-right: 130px;
+	padding-left: 130px;
 
 	position: absolute;
 	left: 0;
@@ -420,8 +428,8 @@ ul.site-navigation {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 120px;
-	padding-right: 75px;
-	padding-left: 75px;
+	padding-right: 130px;
+	padding-left: 130px;
 }
 .tag {
 	font-size: 21px;
