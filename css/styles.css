@@ -339,17 +339,29 @@ p.hotel-booking-text {
 	box-sizing: border-box;
 }
 .search-form label {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items:center;
 	width: 100%;
 	
 }
+
 .search-form_half {
 	width: 50%
 }
 
-
+.search-form svg {
+	fill: #a9a9a9;
+	position: absolute;
+	left:428px;
+}
+.search-form svg:hover  {
+	fill: #a9cbe0;
+}
+.search-form input[type="text"]:active + .search-form svg {
+	fill: #000;
+}
 .field {
 	box-sizing: border-box;
 	padding-left: 6px;
@@ -530,7 +542,7 @@ p.hotel-booking-text {
 	cursor: pointer;
 }
 .checkbox-list-one input[type="checkbox"] + .checkbox-indicator::before {
-	content: "";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
