@@ -13,12 +13,16 @@ body {
   background-position: top center;
   
   position: relative;
+
 }
 
 a {
   text-decoration: none;
 }
 
+.shadow {
+	 box-shadow: 0 6px 12px rgba(0,0,0,.3);
+}
 .container {
   width: 1200px;
   margin: 0 auto;
