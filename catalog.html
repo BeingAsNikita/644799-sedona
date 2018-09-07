@@ -7,8 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body>
-	<header class="inner-header container">
+  <body class="container shadow">
+	<header class="inner-header">
 
 		
 			<nav class="main-navigation">
@@ -26,7 +26,7 @@
 			</nav>
 	</header>
 
-	<main class="container">
+	<main class="">
 
 		<section class="hotel-filter">
 			<form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
@@ -34,7 +34,7 @@
 				<legend>Инфраструктура:</legend>
 			
 				<label for="pool">Бассейн
-					<input class="visually-hidden" type="checkbox"  id="pool" name="pool">
+					<input class="visually-hidden" type="checkbox"  id="pool" name="pool" checked>
 					 <span class="checkbox-indicator"></span>
 				</label>
 				<label for="parking">Парковка
@@ -42,7 +42,7 @@
 					 <span class="checkbox-indicator"></span>
 				</label>
 					<label for="Wi-Fi">Wi-Fi
-					<input class="visually-hidden" type="checkbox" id="Wi-Fi" name="Wi-Fi">
+					<input class="visually-hidden" type="checkbox" id="Wi-Fi" name="Wi-Fi" disabled>
 					 <span class="checkbox-indicator"></span>
 				</label>	
 				</fieldset>
@@ -51,15 +51,15 @@
 				<legend>Тип жилья:</legend>
 
 					<label for="hotels">Гостиница
-						<input class="visually-hidden" type="checkbox"  id="hotels" name="hotels">
+						<input class="visually-hidden" type="checkbox"  id="hotels" name="hotels" checked>
 						<span class="checkbox-indicator"></span>
 					</label>
 					<label for="motels">Мотель
-						<input class="visually-hidden" type="checkbox"  id="motels" name="motels">
+						<input class="visually-hidden" type="checkbox"  id="motels" name="motels" checked>
 						<span class="checkbox-indicator"></span>
 					</label>
 					<label for="apartments">Апартаменты
-						<input class="visually-hidden" type="checkbox" id="apartments" name="apartments">
+						<input class="visually-hidden" type="checkbox" id="apartments" name="apartments" checked>
 						<span class="checkbox-indicator"></span>
 					</label>	
 			</fieldset>

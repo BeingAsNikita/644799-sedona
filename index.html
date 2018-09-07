@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
 
   </head>
-  <body>
+  <body  class="container shadow">
 
-	<header class="main-header container shadow">
+	<header class="main-header">
 
 		
 			<nav class="main-navigation container-s">
@@ -34,7 +34,7 @@
 		
 	</header>
 	
-	<main class="main-index container shadow">
+	<main class="main-index">
 		<section class="intro">
 			<div class="intro-welcome">
 				<img src="img/intro-welcome.svg" class="bg-img" width="459" height="353" alt="Добро пожаловать в седону!">
@@ -159,13 +159,13 @@
               		<p>
 						<label class="search-form_half">
 						<span>Взрослые:</span>
-							<input class="field number-of-people" type="number" min="0" max="10" name="adults">
+							<input class="field number-of-people" type="text" min="0" max="10" name="adults">
 						</label>
 					
 						
 						<label class="search-form_half">
 						<span>Дети:</span>
-							<input class="field number-of-people" type="number" min="0" max="10" name="children">
+							<input class="field number-of-people" type="text" min="0" max="10" name="children">
 						</label>	
 						
 					</p>
@@ -178,7 +178,7 @@
 		</section>
 	</main>
 
-	<footer class="main-footer shadow">
+	<footer class="main-footer">
 		
 		<p class="tag">
 			#VISITSEDONA
