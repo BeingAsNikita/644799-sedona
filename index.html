@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
 
   </head>
@@ -40,7 +40,7 @@
 				<img src="img/intro-welcome.svg" class="bg-img" width="459" height="353" alt="Добро пожаловать в седону!">
 			</div>
 			<div class="intro-text">
-			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+			<p>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
 			
@@ -82,7 +82,7 @@
 				<li class="reasons-item reasons-item_s reasons-b">
 					<div class="reasons-text">
 						<h3 class="souvenirs">Сувениры</h3>
-						<p>Не только китайскоо, но и местного производства</p>
+						<p>Не только китайского, но и местного производства</p>
 					</div>
 				</li>
 				
@@ -132,7 +132,7 @@
 			<a href="#" class="button-brown search-btn">Поиск гостиницы в Седоне</a>
 				<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
 					<p>
-						<label>
+						<label class="search-form_l">
 						<span>Дата заезда:</span>
 							<input class="field date-start-end" type="text" name="start" 
 							value=""
@@ -144,7 +144,7 @@
               			</label>
               		</p>
               		<p>
-						<label>
+						<label class="search-form_l">
 						<span>Дата выезда:</span>
 							<input class="field date-start-end" type="text" name="end" 
 							value=""
@@ -156,19 +156,29 @@
               			</label>
               		</p>
               		
-              		<p>
+              		<div class="counter-wrap">
 						<label class="search-form_half">
 						<span>Взрослые:</span>
-							<input class="field number-of-people" type="text" min="0" max="10" name="adults">
+							<div class="search-wrap">
+								<button class="btn-minus" type="button"></button> 
+								<input class="field number-of-people" type="text" min="0" max="10" name="adults">
+								<button class="btn-plus" type="button"></button> 
+							</div>
+							
 						</label>
 					
 						
 						<label class="search-form_half">
-						<span>Дети:</span>
+						<span class="children">Дети:</span>
+						<div class="search-wrap">
+							<button class="btn-minus" type="button"></button> 
 							<input class="field number-of-people" type="text" min="0" max="10" name="children">
+							<button class="btn-plus" type="button"></button> 
+							
+						</div>
 						</label>	
 						
-					</p>
+					</div>
 					<button type="submit" class="button-blue find-btn">НАЙТИ</button>
 				</form>
 		</section>

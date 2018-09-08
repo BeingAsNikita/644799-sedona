@@ -63,7 +63,7 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 	background-size:  1200px;
 	background-repeat: no-repeat;
-	background-position-x: 200px;
+	background-position: top center;
 	margin-top:0;
 	
 }
@@ -150,7 +150,7 @@ ul.site-navigation {
 	color: #000000;
 	text-align: center;
 	background-color: #FFF;
-	padding-bottom: 56px;
+	padding-bottom: 54px;
 	padding-top: 60px;
 
 
@@ -163,14 +163,14 @@ ul.site-navigation {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	width: 636px;
+	width: 600px;
 	margin: 0 auto;
 
 }
 .intro-text p:last-child {
 	font-size: 14px;
 	margin: 0 auto;
-	margin-top: 26px;
+	margin-top:30px;
 	width: 550px;
 
 }
@@ -179,7 +179,7 @@ ul.site-navigation {
 	width: 100%;
 	min-height: 59px;
 	position: absolute;
-	bottom:99%;
+	bottom:98%;
 	left:0;
 	background-image: url("../img/polygon.svg");
 	background-position: top center;
@@ -250,7 +250,7 @@ ul.site-navigation {
 	align-items: center;
 	align-self: center;
 	max-width: 400px;
-	padding-top: 30px;
+
 	box-sizing: border-box;
 	margin: 0 auto;
 
@@ -372,7 +372,14 @@ p.hotel-booking-text {
 	
 	box-sizing: border-box;
 }
-.search-form label {
+.search-form_half {
+	width: 50%;
+	display: flex;
+	align-items: center;
+
+}
+
+.search-form_l {
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -380,9 +387,17 @@ p.hotel-booking-text {
 	width: 100%;
 	
 }
+.counter-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 16px;
+}
 
-.search-form_half {
-	width: 50%
+.children {
+	margin-left: 53px;
 }
 
 .search-form svg {
@@ -424,29 +439,36 @@ p.hotel-booking-text {
 .number-of-people {
 	width: 38px;
 	min-height: 38px;
-	padding-left: 57px;
-    padding-right: 57px;
-    margin-left: auto;
+
+    
 	box-shadow: none;
 	border:none;
 }
-.number-of-people::before {
-	content: "";
-	position: absolute;
-	width: 19px;
-  	height: 3px;
-}
+
 
 .search-form p {
 	width: 100%;
 	display: flex;
 	align-items: center;
 }
-.search-form p:last-of-type {
+
+.search-wrap {
+	margin-left: auto;
+	width: 114px;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
 
+}
+.btn-plus, 
+.btn-minus {
+	box-sizing: border-box;
+	border:none;
+	width: 38px;
+	height: 38px;
+	background-color:#f2f2f2;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .map img {
@@ -632,6 +654,10 @@ p.hotel-booking-text {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 
+}
+.checkbox-list-one input[type="checkbox"]:focus + .checkbox-indicator::before,
+.checkbox-list-two input[type="checkbox"]:focus + .checkbox-indicator::before {
+outline: inherit;
 }
 .checkbox-list-one input[type="checkbox"]:disabled + .checkbox-indicator::before,
 .checkbox-list-two input[type="checkbox"]:disabled + .checkbox-indicator::before {
