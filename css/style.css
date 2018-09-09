@@ -336,7 +336,7 @@ ul.site-navigation {
 
 }
 
-.hausing:before {
+.hausing::before {
 	position: absolute;
 	width: 75px;
 	min-height: 75px;
@@ -348,7 +348,7 @@ ul.site-navigation {
 	background-position: center center;
 
 }
-.food:before {
+.food::before {
 	position: absolute;
 	width: 75px;
 	min-height: 75px;
@@ -359,7 +359,7 @@ ul.site-navigation {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.souvenirs:before {
+.souvenirs::before {
 	position: absolute;
 	width: 75px;
 	min-height: 75px;
@@ -507,20 +507,34 @@ input[type="text"]:focus + svg {
 }
 .field {
 	box-sizing: border-box;
-	padding-left: 6px;
+	padding-left: 13px;
 	padding-right: 6px;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	font-weight: bold;
+	background: #f2f2f2;
 	
 }
-.field,
 .field:hover {
-	background: #f2f2f2;
+	background: #ebebeb;
 }
 .field:focus {
 	background: #ffffff;
-} 
+	outline-color: #e5e5e5;
+}
+.number-of-people:focus,
+.btn-plus:focus, 
+.btn-minus:focus {
+	outline-color: #e5e5e5;
+}
+.number-of-people:hover,
+.btn-plus:hover, 
+.btn-minus:hover {
+	background-color: #ebebeb;
+
+}
+
+
 .date-start-end  {
 	box-sizing: border-box;
 	width: 346px;
@@ -578,9 +592,9 @@ input[type="text"]:focus + svg {
 	background-position: center center;
 	cursor: pointer;
 }
-.btn-plus:before,
-.btn-plus:after,
-.btn-minus:before {
+.btn-plus::before,
+.btn-plus::after,
+.btn-minus::before {
   content: "";
 
   position: absolute;
@@ -593,15 +607,20 @@ input[type="text"]:focus + svg {
   background-color: #a9a9a9;
 }
 
-.btn-plus:before {
+.btn-plus::before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-button[type="button"]:hover + .btn-plus:before {
-	background-color: #000;
+.btn-plus:hover::before,
+.btn-plus:hover::after,
+.btn-minus:hover::before { 
+background-color: #000; 
 }
-
-
+.btn-plus:active::before,
+.btn-plus:active::after,
+.btn-minus:active::before { 
+background-color:  #a9cbe0; 
+}
 .map img {
 	width: 100%;
 	height: auto;
@@ -681,15 +700,15 @@ button[type="button"]:hover + .btn-plus:before {
 	    -ms-grid-row-align: center;
 	    align-self: center;
 	margin-right: 6px;
-	font-weight: bold;
+	
 }
 .footer-copyright a {
 	display: inline-block;
 	width: 115px;
 }
 .footer-social {
-	
-		text-align: center;
+	margin-left: -31px;
+    text-align: center;
 }
 .footer-social ul  {
 	padding: 0;
@@ -800,7 +819,7 @@ button[type="button"]:hover + .btn-plus:before {
 	padding-left: 41px;
 	cursor: pointer;
 }
-input[type="checkbox"] + .checkbox-indicator:before {
+input[type="checkbox"] + .checkbox-indicator::before {
   content: "";
   position: absolute;
   top: 0;
@@ -824,7 +843,7 @@ input[type="checkbox"] + .checkbox-indicator:before {
 	padding-left: 41px;
 	cursor: pointer;
 }
-input[type="checkbox"] + .checkbox-indicator:before {
+input[type="checkbox"] + .checkbox-indicator::before {
 	content: "";
   position: absolute;
   top: 0;
@@ -836,7 +855,7 @@ input[type="checkbox"] + .checkbox-indicator:before {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
  }
- input[type="checkbox"]:checked + .checkbox-indicator:before {
+ input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
 
   position: absolute;
@@ -849,12 +868,12 @@ input[type="checkbox"] + .checkbox-indicator:before {
   background-repeat: no-repeat;
 
 }
-input[type="checkbox"]:focus + .checkbox-indicator:before {
+input[type="checkbox"]:focus + .checkbox-indicator::before {
 	outline: inherit;
 	border: 2px solid #81b3d2;
 	
 }
-input[type="checkbox"]:disabled + .checkbox-indicator:before {
+input[type="checkbox"]:disabled + .checkbox-indicator::before {
   content: "";
 
   position: absolute;
@@ -868,7 +887,7 @@ input[type="checkbox"]:disabled + .checkbox-indicator:before {
 
 }
 
-input[type="checkbox"]:checked:disabled + .checkbox-indicator:before {
+input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
   content: "";
 
   position: absolute;
@@ -1258,6 +1277,7 @@ article.hotel-card img {
 	border:none;
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
 	width: 458px;
 	margin: auto;
 	margin-top: 55px;
