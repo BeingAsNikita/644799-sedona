@@ -12,16 +12,16 @@
 
 		
 			<nav class="main-navigation">
-				<a href="index.html" class="main-header-logo">
+				<a href="index.html" class="main-header-logo" area-label="Главная">
 						<img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
 					</a>
 				<ul class="site-navigation">
 					
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#" area-label="Информация">Информация</a></li>
+					<li><a href="#" area-label="Фото и видео">Фото и видео</a></li>
 				
-					<li><a href="#">Карта штата</a></li>
-					<li ><a class="active">Гостиницы</a></li>
+					<li><a href="#" area-label="Карта штата">Карта штата</a></li>
+					<li ><a class="active" area-label="Гостиницы">Гостиницы</a></li>
 				</ul>
 			</nav>
 	</header>
@@ -34,15 +34,15 @@
 				<legend>Инфраструктура:</legend>
 			
 				<label for="pool">Бассейн
-					<input class="visually-hidden" type="checkbox"  id="pool" name="pool" checked>
+					<input class="visually-hidden" type="checkbox"  id="pool" name="pool" checked area-label="Бассейн">
 					 <span class="checkbox-indicator"></span>
 				</label>
 				<label for="parking">Парковка
-					<input class="visually-hidden" type="checkbox"  id="parking" name="parking">
+					<input class="visually-hidden" type="checkbox"  id="parking" name="parking" area-label="Парковка">
 					 <span class="checkbox-indicator"></span>
 				</label>
 					<label for="Wi-Fi">Wi-Fi
-					<input class="visually-hidden" type="checkbox" id="Wi-Fi" name="Wi-Fi" disabled>
+					<input class="visually-hidden" type="checkbox" id="Wi-Fi" name="Wi-Fi" disabled area-label="Wi-Fi">
 					 <span class="checkbox-indicator"></span>
 				</label>	
 				</fieldset>
@@ -51,15 +51,15 @@
 				<legend>Тип жилья:</legend>
 
 					<label for="hotels">Гостиница
-						<input class="visually-hidden" type="checkbox"  id="hotels" name="hotels" checked>
+						<input class="visually-hidden" type="checkbox"  id="hotels" name="hotels" checked area-label="Гостиница">
 						<span class="checkbox-indicator"></span>
 					</label>
 					<label for="motels">Мотель
-						<input class="visually-hidden" type="checkbox"  id="motels" name="motels" checked>
+						<input class="visually-hidden" type="checkbox"  id="motels" name="motels" checked area-label="Мотель">
 						<span class="checkbox-indicator"></span>
 					</label>
 					<label for="apartments">Апартаменты
-						<input class="visually-hidden" type="checkbox" id="apartments" name="apartments" checked disabled>
+						<input class="visually-hidden" type="checkbox" id="apartments" name="apartments" checked disabled area-label="Апартаменты">
 						<span class="checkbox-indicator"></span>
 					</label>	
 			</fieldset>
@@ -77,7 +77,7 @@
         			<div class="range-toggle range-toggle-min"></div>
         			<div class="range-toggle range-toggle-max"></div>
       			</div>
-         <button class="btn-transparent" type="submit">Показать</button>
+         <button class="btn-transparent" type="submit" area-label="Показать">Показать</button>
      		</div>
 			</fieldset>
 			</form>
@@ -89,9 +89,9 @@
 					<h2>НАЙДЕНО:3</h2>
 					<p>Сортировка:</p>
 				<ul class="filter-meanings">
-						<li class="filter-meanings-item"><a href="#">По цене</a></li>
-						<li class="filter-meanings-item"><a href="#">По типу</a></li>
-						<li class="filter-meanings-item"><a href="#">По рейтингу</a></li>
+						<li class="filter-meanings-item"><a href="#" class="sort-active" area-label="По цене">По цене</a></li>
+						<li class="filter-meanings-item"><a href="#" area-label="По типу">По типу</a></li>
+						<li class="filter-meanings-item"><a href="#" area-label="По рейтингу">По рейтингу</a></li>
 						<li class="filter-meanings-item">
 							<a href="#" class="increase" aria-label="По возрастанию">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -100,7 +100,7 @@
 							</a>
 						</li>
 						<li class="filter-meanings-item">
-							<a href="#" class="decrease" aria-label="По убыванию">
+							<a href="#" class="decrease sort-active" aria-label="По убыванию">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
 									<path fill="#231F20" d="M5.5 10L0 0h11"/>
 								</svg>
@@ -120,12 +120,12 @@
 					<div class="info-wrap">
 						<div class="info-wrap_s">
 							<span>Гостиница</span> 
-							<a href="#" class="button-info button-blue">Подробнее</a>
+							<a href="#" class="button-info button-blue" area-label="Подробнее">Подробнее</a>
 						
 						</div>
 						<div class="info-wrap_s">
 							<span>от 4000 р.</span>
-							<a href="#" class="button-booking button-brown ">Забронировать</a>
+							<a href="#" class="button-booking button-brown" area-label="Забронировать">Забронировать</a>
 						</div>
 					</div>
 				</div>
@@ -149,11 +149,11 @@
 					<div class="info-wrap">
 						<div class="info-wrap_s">
 						<span>Мотель</span>
-						<a href="#" class="button-info button-blue">Подробнее</a>
+						<a href="#" class="button-info button-blue" area-label="Подробнее">Подробнее</a>
 						</div>
 						<div class="info-wrap_s">
 						 <span>от 3000 р.</span>
-						<a href="#" class="button-booking button-brown ">Забронировать</a>
+						<a href="#" class="button-booking button-brown" area-label="Забронировать">Забронировать</a>
 						</div>
 					</div>
 				</div>
@@ -175,11 +175,11 @@
 					<div class="info-wrap">
 						<div class="info-wrap_s">
 						<span>Апартаменты</span>
-						<a href="#" class="button-info button-blue">Подробнее</a>
+						<a href="#" class="button-info button-blue" area-label="Подробнее">Подробнее</a>
 						</div>
 						<div class="info-wrap_s">
 						 <span>от 2000 р.</span>
-						<a href="#" class="button-booking button-brown ">Забронировать</a>
+						<a href="#" class="button-booking button-brown" area-label="Забронировать">Забронировать</a>
 						</div>
 					</div>
 				</div>

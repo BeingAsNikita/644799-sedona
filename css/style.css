@@ -122,7 +122,10 @@ ul.site-navigation {
 	padding: 0;
 }
 
-
+.site-navigation li {
+	width:239px;
+	min-height: 56px;
+}
 .site-navigation a {
 	color:#000000;
 	font-size: 14px;
@@ -133,12 +136,12 @@ ul.site-navigation {
 	display: inline-block;
 	padding-top: 13px;
 	padding-bottom: 15px;
-	width:239px;
-	min-height: 56px;
+
 	vertical-align: middle;
 	text-align: inherit;
 	box-sizing: border-box;
 }
+
 .site-navigation li:nth-child(3) {
 	margin-left: auto;
 }
@@ -157,7 +160,12 @@ ul.site-navigation {
   color:#81b3d2;
 }
 
-.site-navigation a.active {
+.site-navigation a:active {
+	color: #bcbcbc;
+}
+a.active,
+a.active:hover,
+a.active:active {
 	color:#766357;
 }
 
@@ -287,6 +295,7 @@ ul.site-navigation {
 
 }
 .reasons-text {
+	height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -440,7 +449,7 @@ p.hotel-booking-text {
 	padding-left: 55px;
 	background-color: #fff;
 	box-shadow: none;
-	
+	z-index: 3;
 	box-sizing: border-box;
 }
 .search-form_half {
@@ -527,7 +536,7 @@ input[type="text"]:focus + svg {
 .btn-minus:focus {
 	outline-color: #e5e5e5;
 }
-.number-of-people:hover,
+
 .btn-plus:hover, 
 .btn-minus:hover {
 	background-color: #ebebeb;
@@ -548,7 +557,7 @@ input[type="text"]:focus + svg {
 	fill: #000;
 }
 .number-of-people {
-	width: 38px;
+	width: 100%;
 	min-height: 38px;
 
     text-align: center;
@@ -568,6 +577,7 @@ input[type="text"]:focus + svg {
 }
 
 .search-wrap {
+	position: relative;
 	margin-left: auto;
 	width: 114px;
 	box-sizing: border-box;
@@ -582,15 +592,19 @@ input[type="text"]:focus + svg {
 }
 .btn-plus, 
 .btn-minus {
-	position: relative;
+	position: absolute;
 	box-sizing: border-box;
 	border:none;
 	width: 38px;
 	height: 38px;
-	background-color:#f2f2f2;
+	background-color:transparent;
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
+	outline: none;
+}
+.btn-plus {
+	left: 76px;
 }
 .btn-plus::before,
 .btn-plus::after,
@@ -621,10 +635,19 @@ background-color: #000;
 .btn-minus:active::before { 
 background-color:  #a9cbe0; 
 }
+
+.map {
+	position: relative;
+}
 .map img {
 	width: 100%;
 	height: auto;
 	display: block;
+}
+.iframe-map {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .main-footer {
 	display: -webkit-box;
@@ -755,18 +778,22 @@ background-color:  #a9cbe0;
 	background-color: #669ec0;
 }
 .social-btn:active {
-	background-color:#5496bd;
+	background-color: #5496bd;
+}
+.social-btn:active svg path {
+	fill:#88b6d1;
 
 }
-.social-btn path:active {
+.social-btn:active + svg {
 	fill: #88b6d1;
 }
-.button-c path:hover {
+.button-c:hover svg path {
 	fill:#81b3d2;
 }
-.button-c path:active {
+.button-c:active svg path {
 	fill:#bdbbbc;
 }
+
 /*Catalog*/
 
 .hotel-filter {
@@ -854,7 +881,8 @@ input[type="checkbox"] + .checkbox-indicator::before {
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
- }
+  
+ } 
  input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
 
@@ -869,8 +897,8 @@ input[type="checkbox"] + .checkbox-indicator::before {
 
 }
 input[type="checkbox"]:focus + .checkbox-indicator::before {
-	outline: inherit;
-	border: 2px solid #81b3d2;
+	outline:2px solid #81b3d2;
+	
 	
 }
 input[type="checkbox"]:disabled + .checkbox-indicator::before {
@@ -1096,6 +1124,7 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
 	    -ms-grid-row-align: center;
 	    align-self: center;
 }
+
 .filter-meanings {
 	padding-left: 0;
 	list-style: none;
@@ -1150,19 +1179,27 @@ input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
 .filter-meanings-item:last-child {
 	margin-right: 0px;
 }
-.filter-meanings-item:nth-child(4) path:hover,
-.filter-meanings-item:last-child path:hover {
+.increase:hover + svg path,
+.decrease:hover + svg path {
 	fill: #000;
 }
-.filter-meanings-item:nth-child(4) path:active,
-.filter-meanings-item:last-child path:active {
+.increase svg path:active,
+.decrease svg path:active  {
 	fill: #81b3d2;
 }
 
 .filter-meanings-item a:active {
 	color: #000000;
 }
-
+.filter-meanings-item .sort-active {
+	color:#81b3d2;
+	opacity: 1;
+	border-bottom: none;
+}
+.sort-active svg path {
+	fill: #81b3d2;
+	opacity: 1;
+}
 .hotel-card {
 	box-sizing: border-box;
 	padding-left: 72px;
@@ -1200,7 +1237,7 @@ article.hotel-card img {
 	color: #000000;
 
 }
-.hotel-card h3 a:hover {
+ .hotel-name a:hover {
 	color:#81b3d2; 
 }
 .hotel-card h3 a:active {
