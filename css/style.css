@@ -358,23 +358,25 @@ a.active:active {
 	min-height: 75px;
 	left:163px;
 	top: 56px;
-	content: url("../img/icon-1.svg");
+	content: "";
 	background-image:url("../img/icon-1.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: 75px 75px;
 
 }
 .food::before {
 	display: block;
 	position: absolute;
 	width: 75px;
-	min-height: 75px;
+	height: 75px;
 	left:163px;
 	top: 56px;
 	content:" ";
 	background-image: url("../img/icon-3.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: 75px 75px;
 }
 .souvenirs::before {
 	position: absolute;
@@ -382,10 +384,11 @@ a.active:active {
 	min-height: 75px;
 	left:163px;
 	top: 56px;
-	content: url("../img/icon-2.svg");
+	content: "";
 	background-image: url("../img/icon-2.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: 75px 75px;
 }
 .text-gray {
 	background-color: #eeeeee;
