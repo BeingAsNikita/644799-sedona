@@ -299,6 +299,7 @@ a.active:active {
 
 }
 .reasons-text {
+	padding: 0;
 	height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -309,7 +310,7 @@ a.active:active {
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center;
+	        
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-align: center;
@@ -323,6 +324,7 @@ a.active:active {
 
 	        box-sizing: border-box;
 	margin: 0 auto;
+	padding: 46px 0 40px;
 
 
 }
@@ -332,12 +334,15 @@ a.active:active {
 	-ms-flex-item-align: center;	
 	    -ms-grid-row-align: center;	
 	    align-self: center;
-	    margin-top: 0px;
+	    margin: 0px;
 	max-width: 151px;
+	padding-bottom: 24px;
 }
 .reasons-text p {
 	margin-top: 5px;
 	max-width: 305px;
+	margin: 0;
+	padding-bottom: 20px;
 
 }
 .reasons-b {
@@ -346,7 +351,7 @@ a.active:active {
 	        -ms-grid-row-align:flex-end;
 	    align-items:flex-end;
 	min-height: 330px;
-	padding-top: 90px;
+	padding-top: 112px;
 	position: relative;
 
 }
@@ -540,6 +545,7 @@ p.hotel-booking-text {
 	position: absolute;
 	left:428px;
 	cursor: pointer;
+	height: 22px;
 }
 .search-form svg:hover  {
 	fill: #000;
@@ -693,6 +699,7 @@ background-color:  #a9cbe0;
 	left: 0;
 }
 .main-footer {
+	box-sizing: border-box;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
